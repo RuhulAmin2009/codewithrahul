@@ -1,32 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CodeWithRahul</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav {
+      background-color: #1a1a1a;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .container {
+      max-width: 700px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    h1, h2 {
+      text-align: center;
+    }
+
+    .card {
+      background-color: white;
+      border-radius: 10px;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .card h3 {
+      color: #007acc;
+    }
+
+    .date {
+      font-size: 0.9em;
+      color: gray;
+    }
+  </style>
+</head>
 <body>
+
   <!-- Navigation Bar -->
-  <nav style="background-color:#1a1a1a; padding: 1rem; text-align: center;">
-    <a href="#" style="color: white; margin: 0 15px; text-decoration: none; font-weight: bold;">Home</a>
-    <a href="#about" style="color: white; margin: 0 15px; text-decoration: none; font-weight: bold;">About</a>
-    <a href="#contact" style="color: white; margin: 0 15px; text-decoration: none; font-weight: bold;">Contact</a>
-    <a href="#blog" style="color: white; margin: 0 15px; text-decoration: none; font-weight: bold;">Blog</a>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+    <a href="#blog">Blog</a>
   </nav>
 
-  <!-- Existing Content Below -->
-  <div style="text-align:center; margin-top: 30px;">
+  <!-- Heading -->
+  <div class="container">
     <h1>CodeWithRahul</h1>
-    <p><strong>Coding | Ethical Hacking | Instagram Growth</strong></p>
+    <p style="text-align: center;"><strong>Coding | Ethical Hacking | Instagram Growth</strong></p>
   </div>
 
-  <!-- Blog Section -->
-  <div style="max-width: 700px; margin: auto; padding: 20px;" id="blog">
-    <!-- Your blog cards go here -->
+  <!-- Blog Posts -->
+  <div class="container" id="blog">
+    <div class="card">
+      <h3>Welcome to My Blog</h3>
+      <p>Hello! I'm Rahul Amin, and this is my personal blog where I share my journey in coding, ethical hacking, and growing Instagram accounts.</p>
+      <p class="date">Posted on: May 6, 2025</p>
+    </div>
+
+    <div class="card">
+      <h3>Top 5 HTML Tips for Beginners</h3>
+      <p>Want to start building websites? Here are 5 HTML tips you must know before writing your first webpage!</p>
+      <p class="date">Posted on: May 5, 2025</p>
+    </div>
+
+    <div class="card">
+      <h3>What is Ethical Hacking?</h3>
+      <p>Ethical hacking means using hacking skills to protect systems. Learn how to get started as a white-hat hacker.</p>
+      <p class="date">Posted on: May 4, 2025</p>
+    </div>
+
+    <div class="card">
+      <h3>Grow Your Instagram Organically</h3>
+      <p>Learn smart tips to grow your Instagram account without paid promotions or fake followers.</p>
+      <p class="date">Posted on: May 3, 2025</p>
+    </div>
   </div>
 
   <!-- About Section -->
-  <div id="about" style="max-width: 700px; margin: auto; padding: 20px;">
+  <div class="container" id="about">
     <h2>About Me</h2>
     <p>I am Rahul Amin, a student and coding enthusiast. I love exploring ethical hacking and social media growth techniques.</p>
   </div>
 
   <!-- Contact Section -->
-  <div id="contact" style="max-width: 700px; margin: auto; padding: 20px;">
+  <div class="container" id="contact">
     <h2>Contact</h2>
     <p>You can reach me at: <strong>ruhulamin2009@gmail.com</strong></p>
   </div>
+
 </body>
+</html>
