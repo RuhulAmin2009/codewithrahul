@@ -1,111 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>CodeWithRahul</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet"/>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background-color: #f4f4f4;
       margin: 0;
-      padding: 0;
+      font-family: 'Roboto Slab', serif;
+      background: #f7f7f7;
     }
 
-    nav {
-      background-color: #1a1a1a;
-      padding: 1rem;
-      text-align: center;
-    }
-
-    nav a {
+    .navbar {
+      background-color: #111;
       color: white;
-      margin: 0 15px;
+      padding: 10px 20px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .navbar a {
+      color: white;
       text-decoration: none;
+      margin: 0 10px;
       font-weight: bold;
     }
 
+    .navbar a:hover {
+      text-decoration: underline;
+    }
+
     .container {
-      max-width: 700px;
-      margin: auto;
       padding: 20px;
+    }
+
+    .blog-card {
+      background: white;
+      padding: 20px;
+      margin: 20px 0;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
     }
 
     h1, h2 {
-      text-align: center;
+      color: #333;
     }
 
-    .card {
-      background-color: white;
-      border-radius: 10px;
-      padding: 20px;
-      margin-bottom: 20px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    }
-
-    .card h3 {
+    h2 {
       color: #007acc;
     }
 
+    p {
+      color: #444;
+    }
+
     .date {
-      font-size: 0.9em;
-      color: gray;
+      font-size: 0.85em;
+      color: #999;
     }
   </style>
 </head>
 <body>
 
-  <!-- Navigation Bar -->
-  <nav>
-    <a href="#">Home</a>
-    <a href="#about">About</a>
-    <a href="#contact">Contact</a>
-    <a href="#blog">Blog</a>
-  </nav>
-
-  <!-- Heading -->
-  <div class="container">
-    <h1>CodeWithRahul</h1>
-    <p style="text-align: center;"><strong>Coding | Ethical Hacking | Instagram Growth</strong></p>
+  <div class="navbar">
+    <div><strong>CodeWithRahul</strong></div>
+    <div>
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </div>
   </div>
 
-  <!-- Blog Posts -->
-  <div class="container" id="blog">
-    <div class="card">
-      <h3>Welcome to My Blog</h3>
+  <div class="container">
+    <div class="blog-card">
+      <h2>Welcome to My Blog</h2>
       <p>Hello! I'm Rahul Amin, and this is my personal blog where I share my journey in coding, ethical hacking, and growing Instagram accounts.</p>
       <p class="date">Posted on: May 6, 2025</p>
     </div>
 
-    <div class="card">
-      <h3>Top 5 HTML Tips for Beginners</h3>
+    <div class="blog-card">
+      <h2>Top 5 HTML Tips for Beginners</h2>
       <p>Want to start building websites? Here are 5 HTML tips you must know before writing your first webpage!</p>
       <p class="date">Posted on: May 5, 2025</p>
     </div>
 
-    <div class="card">
-      <h3>What is Ethical Hacking?</h3>
+    <div class="blog-card">
+      <h2>What is Ethical Hacking?</h2>
       <p>Ethical hacking means using hacking skills to protect systems. Learn how to get started as a white-hat hacker.</p>
       <p class="date">Posted on: May 4, 2025</p>
     </div>
 
-    <div class="card">
-      <h3>Grow Your Instagram Organically</h3>
-      <p>Learn smart tips to grow your Instagram account without paid promotions or fake followers.</p>
+    <div class="blog-card">
+      <h2>Grow Your Instagram Organically</h2>
+      <p>Learn techniques to grow your Instagram followers without paid ads or fake engagement.</p>
       <p class="date">Posted on: May 3, 2025</p>
     </div>
-  </div>
-
-  <!-- About Section -->
-  <div class="container" id="about">
-    <h2>About Me</h2>
-    <p>I am Rahul Amin, a student and coding enthusiast. I love exploring ethical hacking and social media growth techniques.</p>
-  </div>
-
-  <!-- Contact Section -->
-  <div class="container" id="contact">
-    <h2>Contact</h2>
-    <p>You can reach me at: <strong>ruhulamin2009@gmail.com</strong></p>
   </div>
 
 </body>
